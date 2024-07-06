@@ -1,0 +1,199 @@
+
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    header {
+        background: url('../media/background_image.jpg') black no-repeat 90% 50% scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}
+
+
+.profile h1{
+    font-size: 45px;
+    font-weight: 400;
+    color: white;
+}
+
+.profile .subheading {
+    font-size: 25px;
+    color: #FFF;
+}
+
+.circular {
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.down-arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: -22px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-transition: 0.3s margin-bottom ease;
+    -moz-transition: 0.3s margin-bottom ease;
+    -ms-transition: 0.3s margin-bottom ease;
+    -o-transition: 0.3s margin-bottom ease;
+    transition: 0.3s margin-bottom ease;
+}
+
+
+.down-arrow:hover {
+    margin-bottom: 10px;
+}
+
+.down-arrow:hover svg path {
+    fill: #e1ceae;
+    -webkit-transition: fill 800ms;
+    transition: fill 800ms;
+}
+
+@media print, screen and (max-width: 1200px) {
+
+    .profile h1 {
+        font-size: 35px;
+    }
+
+    .profile .subheading {
+        font-size: 20px;
+    }
+
+    .circular {
+        width: 200px;
+        height: 200px;
+        border-radius: 150px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+    }
+}
+
+.card {
+    border: 0;
+    border-radius: 0.1875rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bg-pink {
+    background-color: #e1ceae;
+}
+
+
+@media (min-width: 768px) {
+    .paddings {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .paddings {
+        padding: 15px;
+    }
+}
+
+.badge {
+    line-height: 1.5 !important;
+    font-weight: 400 !important;
+}
+
+
+a {
+    color: #6f42c1 !important;
+}
+
+.img-raised {
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.copyleft {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.cc-email i {
+    color: #888;
+}
+
+.cc-github i {
+    color: #888;
+}
+
+.cc-linkedin i {
+    color: #888;
+}
+
+.cc-email:hover i {
+    color: #B23121;
+}
+
+.cc-github:hover i {
+    color: #000000;
+}
+
+.cc-linkedin:hover i {
+    color: #2867B2;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #f5f5f5;
+}
